@@ -1,5 +1,5 @@
 
-import LionElJonson from '../assets/Lion-ElJonson.jpg'
+import LionElJonson from '../assets/Lion-ElJonson.webp'
 export default function Profile(){
     return (
         <div className="profile">
@@ -9,9 +9,9 @@ export default function Profile(){
                     src = {LionElJonson}
                     alt = "User avatar"
                 />
-                <p>Lion El'Jonson</p>
-                <p>@Dark</p>
-                <p>Caliban, Imperium</p>
+                <p className='profile_name'>Lion El'Jonson</p>
+                <p className='profile_top_info'>@Dark</p>
+                <p className='profile_top_info'>Caliban, Imperium</p>
             </div>
             <ul className="profile_info">
                 <li className="profile_item">
