@@ -1,0 +1,64 @@
+.grid {
+    display: grid;
+    /* grid-template-columns: [first] 100px [second] 30% [third] auto [forth]; */
+    /* grid-template-columns: repeat(2, 130px) 140px; */
+
+    /* grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 50px auto;
+    grid-auto-rows: 15px 30px; */
+
+    /* grid-template-columns: 30%;
+    grid-auto-flow: column;
+    grid-auto-columns: 45px 80px; */
+
+    grid-template-columns: 25% auto 15%;
+    grid-template-areas: 
+    "menu catalog advertisement"
+    "menu catalog advertisement"
+    "menu catalog ."
+    "menu order order"
+    ;
+    gap: 3px 5px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* place-items: center; */
+}
+.grid_item {
+    overflow: hidden;
+}
+.lion {
+    grid-area: menu;
+    background-color: lightskyblue;
+}
+.second {
+    grid-area: catalog;
+    background-color: lightgreen;
+}
+.full {
+    grid-area: advertisement;
+    background-color: palevioletred;
+}
+.pertu {
+    grid-area: order;
+    background-color: rgb(64, 76, 87);
+}
+.khan {
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 8; */
+    grid-column: 1/4;
+    grid-row: 6/8;;
+    background-color: #f0f0f0f0;
+}
+.leman {
+    grid-column: -1/1;
+    order: 1;
+    background-color: gray;
+}
+.dorn {
+    grid-column: span 2;
+    background-color: gold;
+}
