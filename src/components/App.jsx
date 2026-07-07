@@ -2,8 +2,10 @@ import Profile from './Profile.jsx'
 import './App.css'
 import Grid from './Grid.jsx'
 import primarchData from '../primarchData.json'
+import LegioList from './LegioList.jsx'
+import legions from '../legions.json'
+
 const images = import.meta.glob('../assets/*.webp', { eager: true, import: 'default' })
-console.log(images)
 
 function App() {
 
@@ -16,6 +18,7 @@ function App() {
              info={primarchData.stats}
     />
     <Grid />
+    <LegioList legions={legions} />
     </>
   )
 }
