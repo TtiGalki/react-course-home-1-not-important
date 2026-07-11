@@ -1,0 +1,21 @@
+.listOfLegions {
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-around;
+    list-style-type: none;
+}
+.legioItem {
+    width: 15%;
+    border: 1px solid black;
+    padding: 5px;
+}
+.legioItem > div {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+.legioItem img {
+    max-width: 100%;
+    height: 133px;
+}

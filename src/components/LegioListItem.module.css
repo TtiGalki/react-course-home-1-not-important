@@ -1,0 +1,14 @@
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.status {
+    font-size: 20px;
+}
+.loyal {
+    color: greenyellow;
+}
+.traiters {
+    color: brown;
+}
