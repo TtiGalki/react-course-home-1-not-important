@@ -4,6 +4,7 @@ import Grid from './Grid.jsx'
 import primarchData from '../primarchData.json'
 import LegioList from './LegioList.jsx'
 import legions from '../legions.json'
+import TransactionHistory from './TransactionHistory.jsx'
 
 const images = import.meta.glob('../assets/*.webp', { eager: true, import: 'default' })
 
@@ -19,6 +20,7 @@ function App() {
     />
     <Grid />
     <LegioList legions={legions} />
+    <TransactionHistory />
     </>
   )
 }

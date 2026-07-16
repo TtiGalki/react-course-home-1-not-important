@@ -1,0 +1,19 @@
+.transaction_hisory {
+  max-width: calc(100% - 80px);
+  margin: 60px auto;
+  text-align: center;
+  border-collapse: collapse;
+}
+.transaction_hisory th,
+.transaction_hisory td {
+    font-size: 24px;
+    padding: 8px 12px;
+    border: 1px solid #000;
+}
+.transaction_hisory th{
+    color: #fff;
+    background-color: #2A2A2A;
+}
+.transaction_hisory tr + tr td {
+    background-color: #D3D3D3;
+}
