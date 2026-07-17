@@ -1,5 +1,5 @@
 import './TransactionHistory.css'
-export default function TransactionHistory () {
+export default function TransactionHistory ({transactions}) {
     return (
         <table className="transaction_hisory">
             <thead>
@@ -11,16 +11,13 @@ export default function TransactionHistory () {
             </thead>
 
             <tbody>
-                <tr>
-                <td>Invoice</td>
-                <td>125</td>
-                <td>USD</td>
-                </tr>
-                <tr>
-                <td>Withdrawal</td>
-                <td>85</td>
-                <td>USD</td>
-                </tr>
+                {transactions.map((transaction) => {
+                    return (<tr key={transaction.id}>
+                        <td>{transaction.type}</td>
+                        <td>{transaction.amount}</td>
+                        <td>{transaction.currency}</td>
+                    </tr>)
+                })}
             </tbody>
         </table>
     )
